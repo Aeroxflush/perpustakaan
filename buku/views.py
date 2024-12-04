@@ -1,3 +1,11 @@
 from django.shortcuts import render
+from .models import Book
 
-# Create your views here.
+def index(request):
+    buku = Book.objects.all()
+    context = {
+        'Title':'Perpustakaan STMIK Pontianak', 
+        'Heading':'Daftar Buku Ilmu Komputer',
+        'buku':buku,
+    }
+    return render(request, "index.html" , context)
