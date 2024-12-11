@@ -6,6 +6,6 @@ def index(request):
     context = {
         'Title':'Perpustakaan STMIK Pontianak', 
         'Heading':'Daftar Buku Ilmu Komputer',
-        'buku':buku,
+        'buku': buku,
     }
-    return render(request, "index.html" , context)
+    return render(request, "buku.html" , context)

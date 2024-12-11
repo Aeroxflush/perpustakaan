@@ -25,7 +25,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'buku'
+    'buku',
+    'anggota',
 ]
 
 MIDDLEWARE = [
@@ -65,7 +66,7 @@ WSGI_APPLICATION = 'perpustakaan.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '232102593_dbperpustakaan',
+        'NAME': 'dataperpustakaan',
         'USER': 'root',
         'PASSWORD': '',
         'PORT': '3307'        
